@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yuriblanco/ontologies/2018/11/acougue"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yuriblanco/ontologies/2018/11/acougue"
+     versionIRI="http://www.semanticweb.org/yuriblanco/ontologies/2018/11/acougue">
+    <Prefix name="" IRI="http://www.semanticweb.org/iannaor/ontologies/2018/11/acougue"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="acougue" IRI="http://www.semanticweb.org/jigsa/ontologies/2018/11/acougue"/>
+    <Declaration>
+        <Class IRI="#aves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bovino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fornecedor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#minhasclasses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#produto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#suino"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fornece"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fornpor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CNPJ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contato"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#preco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#forn1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#forn2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peca1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peca2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peca3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peca4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peca5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peca6"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#aves"/>
+        <Class IRI="#produto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bovino"/>
+        <Class IRI="#produto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fornecedor"/>
+        <Class IRI="#minhasclasses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#produto"/>
+        <Class IRI="#minhasclasses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#suino"/>
+        <Class IRI="#produto"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#aves"/>
+        <Class IRI="#bovino"/>
+        <Class IRI="#suino"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#fornecedor"/>
+        <NamedIndividual IRI="#forn1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fornecedor"/>
+        <NamedIndividual IRI="#forn2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#aves"/>
+        <NamedIndividual IRI="#peca1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#aves"/>
+        <NamedIndividual IRI="#peca2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bovino"/>
+        <NamedIndividual IRI="#peca3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bovino"/>
+        <NamedIndividual IRI="#peca4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#suino"/>
+        <NamedIndividual IRI="#peca5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#suino"/>
+        <NamedIndividual IRI="#peca6"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornece"/>
+        <NamedIndividual IRI="#forn1"/>
+        <NamedIndividual IRI="#peca1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornece"/>
+        <NamedIndividual IRI="#forn1"/>
+        <NamedIndividual IRI="#peca2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornece"/>
+        <NamedIndividual IRI="#forn1"/>
+        <NamedIndividual IRI="#peca3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornece"/>
+        <NamedIndividual IRI="#forn1"/>
+        <NamedIndividual IRI="#peca4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornece"/>
+        <NamedIndividual IRI="#forn2"/>
+        <NamedIndividual IRI="#peca5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornece"/>
+        <NamedIndividual IRI="#forn2"/>
+        <NamedIndividual IRI="#peca6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornpor"/>
+        <NamedIndividual IRI="#peca1"/>
+        <NamedIndividual IRI="#forn1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornpor"/>
+        <NamedIndividual IRI="#peca2"/>
+        <NamedIndividual IRI="#forn1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fornpor"/>
+        <NamedIndividual IRI="#peca3"/>
+        <NamedIndividual IRI="#forn1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CNPJ"/>
+        <NamedIndividual IRI="#forn1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12345678</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contato"/>
+        <NamedIndividual IRI="#forn1"/>
+        <Literal>Telefone: 2133132585</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CNPJ"/>
+        <NamedIndividual IRI="#forn2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">87654321</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contato"/>
+        <NamedIndividual IRI="#forn2"/>
+        <Literal>email: porcosaqui@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#peca1"/>
+        <Literal>Peito de Frango</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preco"/>
+        <NamedIndividual IRI="#peca1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#peca2"/>
+        <Literal>Coxa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preco"/>
+        <NamedIndividual IRI="#peca2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#peca3"/>
+        <Literal>Contra filé.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preco"/>
+        <NamedIndividual IRI="#peca3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#peca4"/>
+        <Literal>Picanha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preco"/>
+        <NamedIndividual IRI="#peca4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#peca5"/>
+        <Literal>Lombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preco"/>
+        <NamedIndividual IRI="#peca5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#peca6"/>
+        <Literal>Pernil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preco"/>
+        <NamedIndividual IRI="#peca6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.99</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#fornece"/>
+        <ObjectProperty IRI="#fornpor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fornece"/>
+        <Class IRI="#fornecedor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fornpor"/>
+        <Class IRI="#aves"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fornpor"/>
+        <Class IRI="#bovino"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fornpor"/>
+        <Class IRI="#suino"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fornece"/>
+        <Class IRI="#aves"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fornece"/>
+        <Class IRI="#bovino"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fornece"/>
+        <Class IRI="#suino"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fornpor"/>
+        <Class IRI="#fornecedor"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CNPJ"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CNPJ"/>
+        <Class IRI="#fornecedor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#contato"/>
+        <Class IRI="#fornecedor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#aves"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#bovino"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#suino"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preco"/>
+        <Class IRI="#aves"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preco"/>
+        <Class IRI="#bovino"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preco"/>
+        <Class IRI="#produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preco"/>
+        <Class IRI="#suino"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CNPJ"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#contato"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#preco"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
